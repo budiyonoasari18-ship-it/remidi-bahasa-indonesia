@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal Remidi Bahasa Indonesia Kelas 6</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f9; color: #333; }
+    .container { max-width: 700px; background: white; padding: 25px; margin: 0 auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2, h3 { text-align: center; color: #2c3e50; }
+    .form-group { margin-bottom: 15px; }
+    label { font-weight: bold; display: block; margin-bottom: 5px; }
+    input[type="text"] { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    .soal { margin-bottom: 20px; padding: 15px; background: #fafafa; border-left: 4px solid #3498db; border-radius: 4px; }
+    .soal p { margin-top: 0; font-weight: bold; }
+    .opsi label { display: block; margin-bottom: 8px; cursor: pointer; font-weight: normal; }
+    button { background-color: #27ae60; color: white; padding: 12px 20px; border: none; border-radius: 4px; width: 100%; font-size: 16px; cursor: pointer; }
+    button:hover { background-color: #219150; }
+    #hasil { display: none; text-align: center; font-size: 18px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Remidi Bahasa Indonesia Kelas 6</h2>
+  <hr><br>
+
+  <div id="identitas">
+    <div class="form-group">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama kamu">
+    </div>
+    <div class="form-group">
+      <label for="kelas">Kelas:</label>
+      <input type="text" id="kelas" value="6" placeholder="Masukkan kelas">
+    </div>
+    <button onclick="mulaiKuis()">Mulai Kerjakan</button>
+  </div>
+
+  <form id="kuisForm" style="display:none;">
+    <!-- Soal 1 -->
+    <div class="soal">
+      <p>1. Bacalah paragraf berikut!<br>
+      <i>Batik merupakan salah satu warisan budaya Indonesia yang diakui dunia. Proses pembuatan batik membutuhkan ketelitian dan kesabaran tinggi. Setiap daerah di Indonesia memiliki motif batik dengan ciri khas tersendiri.</i><br>
+      Ide pokok paragraf di atas adalah ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q1" value="A"> A. Keindahan motif batik di seluruh daerah</label>
+        <label><input type="radio" name="q1" value="B"> B. Batik sebagai warisan budaya Indonesia</label>
+        <label><input type="radio" name="q1" value="C"> C. Cara membuat batik yang sangat rumit</label>
+        <label><input type="radio" name="q1" value="D"> D. Jenis-jenis kain batik terkenal</label>
+      </div>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="soal">
+      <p>2. Kalimat utama dalam suatu paragraf biasanya diletakkan pada bagian ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q2" value="A"> A. Tengah atau akhir saja</label>
+        <label><input type="radio" name="q2" value="B"> B. Awal, akhir, atau awal dan akhir</label>
+        <label><input type="radio" name="q2" value="C"> C. Dalam tanda kurung</label>
+        <label><input type="radio" name="q2" value="D"> D. Setiap kalimat penjelas</label>
+      </div>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="soal">
+      <p>3. Teks yang berisi penjelasan tentang proses terjadinya suatu fenomena alam atau sosial disebut teks ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q3" value="A"> A. Narasi</label>
+        <label><input type="radio" name="q3" value="B"> B. Eksplanasi</label>
+        <label><input type="radio" name="q3" value="C"> C. Deskripsi</label>
+        <label><input type="radio" name="q3" value="D"> D. Persuasi</label>
+      </div>
+    </div>
+
+    <!-- Soal 4 -->
+    <div class="soal">
+      <p>4. Informasi yang terdapat dalam formulir biasanya berupa data ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q4" value="A"> A. Diri secara akurat dan lengkap</label>
+        <label><input type="radio" name="q4" value="B"> B. Cerita rekaan penulis</label>
+        <label><input type="radio" name="q4" value="C"> C. Opini dari tokoh masyarakat</label>
+        <label><input type="radio" name="q4" value="D"> D. Hasil wawancara bebas</label>
+      </div>
+    </div>
+
+    <!-- Soal 5 -->
+    <div class="soal">
+      <p>5. Bagian pembuka pada teks pidato biasanya berisi ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q5" value="A"> A. Kesimpulan materi pidato</label>
+        <label><input type="radio" name="q5" value="B"> B. Salam pembuka dan rasa syukur</label>
+        <label><input type="radio" name="q5" value="C"> C. Permohonan maaf kepada audiens</label>
+        <label><input type="radio" name="q5" value="D"> D. Uraian pesan-pesan utama</label>
+      </div>
+    </div>
+
+    <!-- Soal 6 -->
+    <div class="soal">
+      <p>6. Kata baku yang benar di bawah ini adalah ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q6" value="A"> A. Apotik</label>
+        <label><input type="radio" name="q6" value="B"> B. Kualitas</label>
+        <label><input type="radio" name="q6" value="C"> C. Ijin</label>
+        <label><input type="radio" name="q6" value="D"> D. Praktek</label>
+      </div>
+    </div>
+
+    <!-- Soal 7 -->
+    <div class="soal">
+      <p>7. Penulisan tanda baca yang tepat pada kalimat dialog di bawah ini adalah ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q7" value="A"> A. "Ibu bertanya, Kapan kamu berangkat?"</label>
+        <label><input type="radio" name="q7" value="B"> B. Ibu bertanya, "Kapan kamu berangkat?"</label>
+        <label><input type="radio" name="q7" value="C"> C. Ibu bertanya: "Kapan kamu berangkat."</label>
+        <label><input type="radio" name="q7" value="D"> D. "Ibu bertanya:" Kapan kamu berangkat?</label>
+      </div>
+    </div>
+
+    <!-- Soal 8 -->
+    <div class="soal">
+      <p>8. Antonim dari kata <b>"konstrusktif"</b> (membangun) adalah ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q8" value="A"> A. Edukatif</label>
+        <label><input type="radio" name="q8" value="B"> B. Inovatif</label>
+        <label><input type="radio" name="q8" value="C"> C. Destruktif</label>
+        <label><input type="radio" name="q8" value="D"> D. Produktif</label>
+      </div>
+    </div>
+
+    <!-- Soal 9 -->
+    <div class="soal">
+      <p>9. Kalimat di bawah ini yang menggunakan ejaan huruf kapital secara benar adalah ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q9" value="A"> A. Kami menyeberangi sungai Progo kemarin.</label>
+        <label><input type="radio" name="q9" value="B"> B. Kami menyeberangi Sungai Progo kemarin.</label>
+        <label><input type="radio" name="q9" value="C"> C. Kami menyeberangi sungai progo kemarin.</label>
+        <label><input type="radio" name="q9" value="D"> D. Kami Menyeberangi Sungai Progo Kemarin.</label>
+      </div>
+    </div>
+
+    <!-- Soal 10 -->
+    <div class="soal">
+      <p>10. Ungkapan <i>"ringan tangan"</i> memiliki arti ...</p>
+      <div class="opsi">
+        <label><input type="radio" name="q10" value="A"> A. Suka mencuri</label>
+        <label><input type="radio" name="q10" value="B"> B. Pemalas</label>
+        <label><input type="radio" name="q10" value="C"> C. Suka membantu / pemurah</label>
+        <label><input type="radio" name="q10" value="D"> D. Mudah marah</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="kirimJawaban()">Kirim Jawaban</button>
+  </form>
+
+  <div id="hasil">
+    <h3>Hasil Kuis</h3>
+    <p id="teksHasil"></p>
+  </div>
+</div>
+
+<script>
+  const kunci = {
+    q1: "B", q2: "B", q3: "B", q4: "A", q5: "B",
+    q6: "B", q7: "B", q8: "C", q9: "B", q10: "C"
+  };
+
+  function mulaiKuis() {
+    var nama = document.getElementById("nama").value;
+    var kelas = document.getElementById("kelas").value;
+    if (nama.trim() === "" || kelas.trim() === "") {
+      alert("Harap isi nama dan kelas terlebih dahulu!");
+      return;
+    }
+    document.getElementById("identitas").style.display = "none";
+    document.getElementById("kuisForm").style.display = "block";
+  }
+
+  function kirimJawaban() {
+    var nama = document.getElementById("nama").value;
+    var kelas = document.getElementById("kelas").value;
+    var skor = 0;
+
+    for (var i = 1; i <= 10; i++) {
+      var opsi = document.getElementsByName("q" + i);
+      var dijawab = false;
+      for (var j = 0; j < opsi.length; j++) {
+        if (opsi[j].checked) {
+          dijawab = true;
+          if (opsi[j].value === kunci["q" + i]) {
+            skor += 10;
+          }
+        }
+      }
+      if (!dijawab) {
+        alert("Harap jawab semua soal sebelum mengirim!");
+        return;
+      }
+    }
+
+    document.getElementById("kuisForm").style.display = "none";
+    document.getElementById("hasil").style.display = "block";
+    document.getElementById("teksHasil").innerText = "Sedang menyimpan hasil...";
+
+    google.script.run.withSuccessHandler(function(response) {
+      document.getElementById("teksHasil").innerText = "Terima kasih, " + nama + "!\nNilai kamu: " + skor + " / 100\nHasil sudah tersimpan di Spreadsheet.";
+    }).simpanHasil(nama, kelas, skor);
+  }
+</script>
+
+</body>
+</html>
